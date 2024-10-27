@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Black Hole Simulation</title>
+    <style>
+        html, body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #the_canvas_id {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+
+    <script type="module">
+        import init from '/pkg/package.js';
+        init('/pkg/package_bg.wasm');
+    </script>
+</body>
+</html>
